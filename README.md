@@ -6,7 +6,7 @@
 
 ## Examples:
 
-1. Blink: [verilog](https://github.com/ombhilare999/icebreaker-ecp5-examples/verilog/blink)
+1. Blink: [verilog](https://github.com/ombhilare999/icebreaker-ecp5-examples/tree/main/verilog/blink)
 
 ## Steps to program:
 
