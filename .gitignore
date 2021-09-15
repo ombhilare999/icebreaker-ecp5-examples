@@ -1,0 +1,5 @@
+# ECP 5 build
+
+*.bit
+*.config
+*.json
