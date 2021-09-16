@@ -11,8 +11,15 @@
 ## Steps to program:
 
 ```
-    cd /icebreaker-ecp5-examples/verilog/<example-name>
-    make prog
+cd /icebreaker-ecp5-examples/verilog/<example-name>
+    
+# Directly programs the FPGA (Program is not retain after power cycle)
+make prog
+
+# Programs the SPI flash on the board (Program is retained after power cycle)
+make flash
+# If you have any IP which is booting from qspi flash, 
+# then you might want to run make flash twice.
 ```
 
 
