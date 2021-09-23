@@ -1,0 +1,5 @@
+LOCATE COMP "clk_in" SITE "L16";	# 12 MHz Clock
+
+LOCATE COMP "rgb[0]" SITE "A15";	# Red
+LOCATE COMP "rgb[1]" SITE "B14";	# Green
+LOCATE COMP "rgb[2]" SITE "A14";        # Blue   

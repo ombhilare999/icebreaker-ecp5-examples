@@ -7,6 +7,7 @@
 ## Examples:
 
 1. Blink: [verilog](https://github.com/ombhilare999/icebreaker-ecp5-examples/tree/main/verilog/blink)
+2. PWM: [verilog](https://github.com/ombhilare999/icebreaker-ecp5-examples/tree/main/verilog/pwm)
 
 ## Steps to program:
 
