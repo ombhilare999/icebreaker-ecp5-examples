@@ -18,8 +18,8 @@ module top (
     end
 
     // Output inverted values of counter onto LEDs
-    assign rgb[2] = ~counter[25];   //Blue
-    assign rgb[1] = 1'b1;           //Green
-    assign rgb[0] = 1'b1;           //Red
+    assign rgb[1] = ~counter[20];   //Blue
+    assign rgb[0] = ~counter[20];   //Green
+    assign rgb[2] = ~counter[20];   //Red
 
 endmodule

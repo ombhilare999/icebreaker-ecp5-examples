@@ -1,5 +1,8 @@
 # ICEBreaker++:
 
+- The icebreaker is based on ICE40UP5K, it is good for small projects but for higher end projects we need more LUTs!.
+- Icebreaker++ board designed by greg comes with ECP5 which having 12K Luts.
+
 <p align="center">
     <img width="520" height="319" src="assets/icebreaker++.png">
 </p>
