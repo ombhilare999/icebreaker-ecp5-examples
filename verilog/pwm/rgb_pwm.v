@@ -1,7 +1,7 @@
 //////////////////////////////////////////////////////////
 //  Name: Omkar Bhilare
 //  Email: omkarbhilare45@gmail.com
-//  Info: Top Verilog file for PWM generator
+//  Info: Top Verilog file for PWM
 //////////////////////////////////////////////////////////
 
 `include "pwm.v"
@@ -11,12 +11,18 @@ module top (
     output [2:0] rgb    //rgb output
 );
 
-    // Create a 8 bit register
-    reg [7:0] counter = 0;
+    parameter delay = 300000;     //0.30 Seconds in Binary    
+    reg [7:0] counter = 0;       // Create a 8 bit register
+    reg [19:0] r_delay = 0;
 
-    // Every positive edge increment register by 1
+    // Increment Counter after 0.30 Seconds
     always @(posedge clk_in) begin
-        counter <= counter + 1;
+        if (r_delay < delay) begin
+            r_delay <= r_delay + 1;
+        end else begin
+            r_delay <= 0;
+            counter <= counter + 1;
+        end 
     end
 
     // Variables for PWM instance
